@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex justify-center items-center min-h-screen bg-gray-50">
+      <main className="flex justify-center items-center min-h-screen bg-gray-600">
         <div className="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full">
           <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">Date Picker</h1>
           <p className="text-center text-gray-500 mb-8">Select a date and set the recurrence</p>
@@ -19,4 +19,4 @@ export default function Home() {
       </main>
     </div>
   );
-}
+} 
