@@ -2,7 +2,7 @@ import React from 'react';
 import useDateStore from '../../store';
 
 const RecurringPreview = () => {
-  const { recurringDates } = useDateStore(); // Get recurring dates from the store
+  const { recurringDates } = useDateStore(); 
 
   return (
     <div className="w-full mt-6">

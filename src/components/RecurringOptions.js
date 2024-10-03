@@ -9,35 +9,35 @@ const RecurringOptions = () => {
   };
 
   const calculateRecurringDates = () => {
-    if (!selectedDate) return; // If no date is selected, exit
+    if (!selectedDate) return; 
 
     let dates = [];
     let current = new Date(selectedDate);
 
     if (recurrence === 'none') {
-      dates.push(new Date(current)); // Push only the selected date
+      dates.push(new Date(current)); 
     } else if (recurrence === 'daily') {
       for (let i = 0; i < 10; i++) {
-        dates.push(new Date(current)); // Add the date to the array
-        current.setDate(current.getDate() + 1); // Increment by 1 day
+        dates.push(new Date(current)); 
+        current.setDate(current.getDate() + 1); 
       }
     } else if (recurrence === 'weekly') {
       for (let i = 0; i < 10; i++) {
-        dates.push(new Date(current)); // Add the date to the array
-        current.setDate(current.getDate() + 7); // Increment by 1 week
+        dates.push(new Date(current)); 
+        current.setDate(current.getDate() + 7); 
       }
     } else if (recurrence === 'monthly') {
       for (let i = 0; i < 10; i++) {
-        dates.push(new Date(current)); // Add the date to the array
-        current.setMonth(current.getMonth() + 1); // Increment by 1 month
+        dates.push(new Date(current)); 
+        current.setMonth(current.getMonth() + 1); 
       }
     }
 
-    setRecurringDates(dates); // Update the store with the calculated recurring dates
+    setRecurringDates(dates); 
   };
 
   useEffect(() => {
-    calculateRecurringDates(); // Recalculate dates when recurrence or date changes
+    calculateRecurringDates(); 
   }, [recurrence, selectedDate]);
 
   return (

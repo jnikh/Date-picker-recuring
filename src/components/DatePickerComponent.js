@@ -11,8 +11,8 @@ const DatePickerComponent = () => {
   const handleDateChange = (date) => {
     if (date) {
       setValue(date);
-      setSelectedDate(date); // Set the selected date in the store
-      setRecurringDates([date]); // Initialize recurring dates with the selected date
+      setSelectedDate(date); 
+      setRecurringDates([date]); 
     }
   };
 
